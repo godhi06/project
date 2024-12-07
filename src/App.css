@@ -1,0 +1,132 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+h1 {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Search Form */
+form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Form otomatis wrap di layar kecil */
+}
+
+input[type="text"] {
+  flex: 1;
+  min-width: 200px; /* Lebar minimum untuk input */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Article Item Styling */
+.article-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.article-item h3 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #007bff;
+}
+
+.article-item p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.article-item a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 14px;
+}
+
+.article-item a:hover {
+  text-decoration: underline;
+}
+
+/* Loading Spinner */
+.spinner {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input[type="text"] {
+    width: 100%; /* Input full-width di layar kecil */
+    margin-bottom: 10px;
+  }
+
+  button {
+    width: 100%; /* Tombol full-width di layar kecil */
+  }
+
+  .article-item {
+    padding: 10px;
+  }
+
+  .article-item h3 {
+    font-size: 16px;
+  }
+
+  .article-item p,
+  .article-item a {
+    font-size: 12px;
+  }
+}
